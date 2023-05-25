@@ -1,5 +1,5 @@
 <input type="text" id="search-input" class="searchTerm" placeholder="Search blog posts..">
-<button type="submit" class="searchButton" id="button">
+<button type="submit" class="searchButton" id="button" onclick="basic()">
     <i class="fa fa-search"></i>
 </button>
 <ul id="results-container"></ul>
@@ -7,8 +7,7 @@
 <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 <script>
 
-var button = document.getElementById('button')
-button.onclick = function() {
+function basic() {
     var sjs = SimpleJekyllSearch({
         searchInput: document.getElementById('search-input').value,
         resultsContainer: document.getElementById('results-container'),
