@@ -1,0 +1,28 @@
+<head>
+    <title></title>
+    {%- include post-head.html -%}
+</head>
+<body class="theme-base-0d">
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-item">
+            <p>A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+        </div>
+        <nav class="sidebar-nav">
+            <a class="sidebar-nav-item active" href="https://lanyon.getpoole.com/">Home</a>
+            <a class="sidebar-nav-item" href="https://lanyon.getpoole.com/about/">About</a>
+            <a class="sidebar-nav-item" href="/archive/v1.1.0.zip">Download</a>
+            <a class="sidebar-nav-item" href="">GitHub project</a>
+            <span class="sidebar-nav-item">Currently v1.1.0</span>
+        </nav>
+        <div class="sidebar-item">
+            <p>
+                © 2020. All rights reserved.
+            </p>
+        </div>
+    </div>
+    <div class="post">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <span class="post-date">{{ page.date | date_to_string }}</span>
+        {{ content }}
+    </div>
+</body>
